@@ -26,5 +26,6 @@
 	 */
 	wp_footer();
 ?>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prism.js"></script>
 	</body>
 </html>

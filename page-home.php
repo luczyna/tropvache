@@ -40,10 +40,6 @@ get_header(); ?>
 					$categories = get_the_terms($ID, 'project_category');
 				?>
 				<div class="eine-project">
-					<a href="<?php echo get_permalink($ID); ?>">
-						<img src="<?php print $cover['url']; ?>" alt="<?php print $cover_alt; ?>" class="" />
-					</a>
-
 					<div class="info">
 						<h2><?php print $title; ?></h2>
 						
@@ -51,6 +47,11 @@ get_header(); ?>
 						<a href="<?php print esc_url(get_term_link($cate)); ?>"><?php print $cate->name; ?></a>
 						<?php endforeach; ?>
 					</div>
+					
+					<a href="<?php echo get_permalink($ID); ?>">
+						<img src="<?php print $cover['url']; ?>" alt="<?php print $cover_alt; ?>" class="" />
+					</a>
+
 				</div>
 
 				<div class="home-glob">
