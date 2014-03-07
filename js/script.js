@@ -73,6 +73,16 @@ $(document).ready(function() {
 		clearInterval(projectHover);
 		$('header').attr('data-ro', 0).css('transform', 'rotateY(0deg)');
 	});
+
+
+	//mobile menu helper
+	$('#menu-helper').click(function() {
+		if ($('#menu-main-menu').hasClass('expandito')) {
+			$('#menu-main-menu').slideUp(200).removeClass('expandito');
+		} else {
+			$('#menu-main-menu').slideDown(200).addClass('expandito');
+		}
+	});
 	
 });
 // })(jQuery);

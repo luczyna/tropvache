@@ -323,7 +323,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    /*padding: 0 0 0 40px;*/
 }
 
 /**
@@ -1059,6 +1059,7 @@ header img {
     border-bottom: 1px #cacaca solid;
     padding: 1em 0 1em 0;
     text-align: center;
+    position: relative;
 }
 
 #menu-main-menu {
@@ -1116,23 +1117,11 @@ article h2 a {
     /*color: tomato;*/
 }
 
-article .entry-title {
-    float: left;
-    width: 40%;
-    margin: 0 5% 1em 0;
-    text-align: right;
-    line-height: 1;
-}
 
-article .list-content {
-    float: left;
-    width: 55%;
-    margin: 0 0 2em;
-}
 
 article .list-content > p {
-    margin: 0 10% 0.75em 0;
-    line-height: 1.75;
+    /*margin: 0 10% 0.75em 0;*/
+    /*line-height: 1.75;*/
 }
 
 article p {
@@ -1205,12 +1194,6 @@ article img {
     width: 102%;
     margin: 0 -1%;
 }
-.eine-project {
-    width: 48%;
-    margin: 0 1% 1.4375em;
-    float: left;
-    position: relative;
-}
 
 .eine-project img {
     display: block;
@@ -1246,7 +1229,7 @@ article img {
 
 /* comments */
 #respond {
-    width: 80%;
+    /*width: 80%;*/
     margin: 0 auto 3em;
 }
 
@@ -1261,15 +1244,17 @@ article img {
     margin: 0 0 1em;
 }
 
-#respond .comment-form label {
-    display: inline-block;
-    width: 10%;
-}
-
 #respond .comment-form input {
     border: 0;
     padding: 0.25em 1%;
     color: #808080;
+}
+
+#respond .comment-form textarea {
+    border: 0;
+    padding: 0.25em 1%;
+    color: #808080;
+    width: 85%;
 }
 
 #respond .comment-form #submit {
@@ -1278,13 +1263,6 @@ article img {
     margin: 0 0 0 10%;
     color: white;
     background: tomato;
-}
-
-#respond .comment-form textarea {
-    border: 0;
-    padding: 0.25em 1%;
-    color: #808080;
-    width: 85%;
 }
 
 #respond .comment-form .form-allowed-tags {
@@ -1314,22 +1292,6 @@ article img {
     list-style: none;
 }
 
-.comment-author {
-    width: 20%;
-    float: left;
-}
-
-.comment-author img {
-    width: 40%;
-    height: auto;
-    margin: 0 0 0.25em;
-}
-
-.comment-body {
-    width: 80%;
-    float: left;
-}
-
 .comment-body p {
     margin: 0 0 1em;
 }
@@ -1350,6 +1312,81 @@ article img {
     line-height: 1.25;
 }
 
+
+.home-glob .entry-title {
+    margin: 0 0 0.125em;
+    width: 100%;
+    text-align: left;
+}
+
+.home-glob .list-content {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+@media all and (min-width: 40em) {
+#menu-helper {
+    display: none;
+}
+
+/* blog list */
+article .entry-title {
+    float: left;
+    width: 40%;
+    margin: 0 5% 1em 0;
+    text-align: right;
+    line-height: 1;
+}
+
+article .list-content {
+    float: left;
+    width: 55%;
+    margin: 0 0 2em;
+}
+
+/* project list */
+.eine-project {
+    width: 48%;
+    margin: 0 1% 1.4375em;
+    float: left;
+    position: relative;
+}
+
+
+/* comments */
+#respond {
+    width: 80%;
+    margin: 0 auto 3em;
+}
+
+#respond .comment-form label {
+    display: inline-block;
+    width: 10%;
+}
+
+.comment-author {
+    width: 20%;
+    float: left;
+}
+
+.comment-author img {
+    width: 40%;
+    height: auto;
+    margin: 0 0 0.25em;
+}
+
+.comment-body {
+    width: 80%;
+    float: left;
+}
+
+/* home */
 .home-glob {
     float: left;
     width: 48%;
@@ -1358,8 +1395,200 @@ article img {
 }
 
 
+/* end bigger media query? */
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 40em) {
+/* header */
+header {
+    width: 10%;
+    z-index: 999;
+}
+
+#access {
+    width: 90%;
+    margin: 1em 0 1em 10%;
+    padding: 1em 0 1em;
+    text-align: right;
+}
+
+#menu-main-menu {
+    display: none;
+    padding: 0 5% 0 0;
+}
+
+#menu-main-menu li {
+    display: block;
+}
+
+#menu-helper {
+    display: block;
+    position: absolute;
+    top: -0.5em;
+    right: 1%;
+    font-size: 2em;
+    /*background: palegreen;*/
+}
+
+
+
+/* pages */
+#content {
+    width: 87.5%;
+    margin: 0 2.5% 1em 10%;
+}
+
+article .entry-title {
+    margin: 0 0 0.25em;
+    text-align: right;
+    line-height: 1;
+}
+
+article .list-content {
+    margin: 0 0 2em;
+}
+
+article h1,
+article h2 {
+    margin: 0 0 0.5em;
+}
+
+article p {
+    margin: 0 0 0.75em;
+}
+
+article hr {
+    width: 95%;
+    margin: 0 0 1em 5%;
+}
+
+article ul,
+article ol {
+    margin: 0 0 0.75em;
+}
+
+article blockquote {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+article pre {
+    margin: 0 0 0.75em;
+    font-size: 80%;
+}
+
+article img {
+    width: 112.5%;
+    height: auto;
+    margin: 0 0 1em -10.5%;
+    display: block;
+}
+
+.adjacent-posts a {
+    margin: 0.25em 0;
+    display: block;
+}
+
+
+/* project list page */
+.project-list {
+    width: 100%;
+    margin: 0;
+}
+.eine-project {
+    margin: 0 0 1em;
+}
+
+.eine-project .info {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5em 2%;
+    width: 96%;
+}
+
+.info h2 {
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    line-height: 1;
+    margin: 0 0 0.25em;
+}
+
+.info a {
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #f1f1f1;
+    margin: 0 1em 0 0;
+}
+
+
+
+/* comments */
+
+#respond .comment-form label {
+    display: block;
+}
+
+#respond .comment-form input {
+    border: 0;
+    padding: 0.25em 1%;
+    color: #808080;
+    width: 100%;
+}
+
+#respond .comment-form textarea {
+    border: 0;
+    padding: 0.25em 1%;
+    color: #808080;
+    width: 100%;
+}
+
+#respond .comment-form #submit {
+    margin: 0;
+}
+
+#respond .comment-form .form-allowed-tags {
+    margin: 0 0 1em;
+}
+
+/* comment list */
+.commentaria {
+    width: 95%;
+    margin: 0 auto 1em;
+}
+
+.comment-author {
+    width: 50%;
+}
+
+.comment-author img {
+    width: 20%;
+    height: auto;
+    margin: 0 0 0.25em;
+}
+
+.comment-body p {
+    margin: 0 0 1em;
+}
+
+
+/* home page */
+.shameless {
+    text-align: left;
+}
+
+.home-glob {
+    margin: 2em 0;
+}
+
 .home-glob .entry-title {
-    float: none;
     margin: 0 0 0.125em;
     width: 100%;
     text-align: left;
@@ -1368,4 +1597,7 @@ article img {
 .home-glob .list-content {
     float: none;
     width: 100%;
+}
+
+/* end mobile query */
 }
