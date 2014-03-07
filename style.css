@@ -1140,7 +1140,8 @@ article p {
     line-height: 1.75;
 }
 
-article a {
+article a,
+p a {
     color: #505050;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -1149,7 +1150,8 @@ article a {
     transition: all 0.2s ease-in-out;
 }
 
-article a:hover {
+article a:hover, 
+p a:hover {
     color: tomato;
 }
 
@@ -1158,10 +1160,20 @@ article hr {
     margin: 0 auto 1em;
 }
 
-article ul {}
-article ol {}
-article blockquote {}
-article code {}
+article ul,
+article ol {
+    margin: 0 11% 0.75em;
+    line-height: 1.75;
+}
+
+article blockquote {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+article pre {
+    margin: 0 10% 0.75em;
+}
 
 article img {
     width: 100%;
