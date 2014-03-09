@@ -32,7 +32,7 @@ $(document).ready(function() {
 	//when a link is clicked, reset the header, then follow through!
 	$('a').click(function(e) {
 		e.preventDefault();
-		console.log('I clicked a link');
+		// console.log('I clicked a link');
 		var href   = $(this).attr('href');
 
 		var transformT = 'translateX(0px)';
@@ -46,7 +46,7 @@ $(document).ready(function() {
 			'transform'        : transformT + transformR
 			// 'top' : '4em'
 		});
-		console.log('now we go to the link');
+		// console.log('now we go to the link');
 		window.location.href = href;
 
 	});

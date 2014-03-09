@@ -1089,6 +1089,7 @@ header img {
 /* pages */
 #content {
     width: 80%;
+    max-width: 70em;
     margin: 1.4em auto 1em;
     position: relative;
 }
@@ -1105,6 +1106,15 @@ article h2 {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0 10% 0.5em;
+}
+
+.page-title {
+    width: 80%;
+    margin: 0 auto 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 article h1 a,
@@ -1182,6 +1192,16 @@ article img {
 .adjacent-posts a {
     margin: 0 1em;
     color: #404040;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.adjacent-posts a:hover {
+    color: #ef4136;
 }
 
 
@@ -1256,13 +1276,13 @@ article img {
 #respond .comment-form #submit {
     border: 0;
     padding: 0.25em 1%;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 20.5%;
     color: white;
     background: #ef4136;
 }
 
 #respond .comment-form .form-allowed-tags {
-    margin: 0 0 1em 10%;
+    margin: 0 0 1em 20.5%;
 }
 
 #respond .comment-form code {
@@ -1588,6 +1608,17 @@ article img {
 /* home page */
 .shameless {
     text-align: left;
+    background: none;
+    padding: 0.5em 0;
+    color: #808080;
+}
+
+.shameless a {
+    color: #606060;
+}
+
+.shameless a:hover {
+    color: #33CEC3;
 }
 
 .home-glob {
