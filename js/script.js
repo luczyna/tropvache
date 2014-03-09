@@ -11,7 +11,7 @@ $(document).ready(function() {
 		var slideOptions  = Array('-5px', '-4px', '3px', '2px', '0px', '2px', '3px', '4px', '5px', '10px');
 		var rotateOptions = Array('-5deg', '-4deg', '-3deg', '-2deg', '0deg', '2deg', '3deg', '4deg', '5deg', '10deg');
 
-		var slide, rotate
+		var slide, rotate;
 		if ($(document).scrollTop() % 10 === 0) {
 			slide         = 'translateX(' + slideOptions[random] + ')'
 		}
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		}
 
 		$('header').css({
-			'-webkit-transform': rotate + slide,
+			'-webkit-transform': '-webkit-' + rotate + '-webkit-' +  slide,
 			'-moz-transform'   : rotate + slide,
 			'-ms-transform'    : rotate + slide,
 			'-o-transform'     : rotate + slide,
@@ -35,14 +35,15 @@ $(document).ready(function() {
 		console.log('I clicked a link');
 		var href   = $(this).attr('href');
 
-		var transform = 'translateX(0px) rotateZ(0deg)';
+		var transformT = 'translateX(0px)';
+		var transformR = 'rotateZ(0deg)';
 
 		$('header').css({
-			'-webkit-transform': transform,
-			'-moz-transform'   : transform,
-			'-ms-transform'    : transform,
-			'-o-transform'     : transform,
-			'transform'        : transform
+			'-webkit-transform': '-webkit-' + transformT + ' -webkit-' + transformR,
+			'-moz-transform'   : transformT + transformR,
+			'-ms-transform'    : transformT + transformR,
+			'-o-transform'     : transformT + transformR,
+			'transform'        : transformT + transformR
 			// 'top' : '4em'
 		});
 		console.log('now we go to the link');

@@ -1007,13 +1007,13 @@ orange     = $faf6fa;
 */
 
 ::selection {
-    background: tomato;
-    color: white;
+    background: #33CEC3;
+    color: black;
 }
 
-:-moz-selection {
-    background: tomato;
-    color: white;
+::-moz-selection {
+    background: #33CEC3;
+    color: black;
 }
 
 
@@ -1023,11 +1023,6 @@ body {
     font-family: 'source sans pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     -webkit-font-smoothing: antialiased;
     position: relative;
-    -o-transition: background 0.1s ease-in-out;
-    -ms-transition: background 0.1s ease-in-out;
-    -moz-transition: background 0.1s ease-in-out;
-    -webkit-transition: background 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out;
 }
 
 header {
@@ -1035,6 +1030,7 @@ header {
     left: 0.5em;
     top: 0.5em;
     width: 5em;
+    z-index: 999;
     -o-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -1084,7 +1080,7 @@ header img {
 }
 
 #menu-main-menu a:hover {
-    color: tomato;
+    color: #ef4136;
 }
 
 
@@ -1093,7 +1089,7 @@ header img {
 /* pages */
 #content {
     width: 80%;
-    margin: 0 auto 1em;
+    margin: 1.4em auto 1em;
     position: relative;
 }
 
@@ -1114,7 +1110,7 @@ article h2 {
 article h1 a,
 article h2 a {
     text-decoration: none;
-    /*color: tomato;*/
+    /*color: #ef4136;*/
 }
 
 
@@ -1141,7 +1137,7 @@ p a {
 
 article a:hover, 
 p a:hover {
-    color: tomato;
+    color: #ef4136;
 }
 
 article hr {
@@ -1254,7 +1250,7 @@ article img {
     border: 0;
     padding: 0.25em 1%;
     color: #808080;
-    width: 85%;
+    width: 75%;
 }
 
 #respond .comment-form #submit {
@@ -1262,7 +1258,7 @@ article img {
     padding: 0.25em 1%;
     margin: 0 0 0 10%;
     color: white;
-    background: tomato;
+    background: #ef4136;
 }
 
 #respond .comment-form .form-allowed-tags {
@@ -1303,7 +1299,8 @@ article img {
     text-align: center;
     margin: 1em auto;
     padding: 0.5em;
-    background: #33CEC3;
+    /*background: #33CEC3;*/
+    background: #ef4136;
     color: white;
 }
 
@@ -1311,6 +1308,15 @@ article img {
     margin: 0.25em 0;
     line-height: 1.25;
 }
+
+.shameless a {
+    color: #FCDFD9;
+}
+
+.shameless a:hover {
+    color: black;
+}
+
 
 
 .home-glob .entry-title {
@@ -1367,7 +1373,7 @@ article .list-content {
 
 #respond .comment-form label {
     display: inline-block;
-    width: 10%;
+    width: 20%;
 }
 
 .comment-author {

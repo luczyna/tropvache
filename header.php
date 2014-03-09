@@ -58,4 +58,4 @@
 			<div id="menu-helper">&equiv;</div>
 		</nav><!-- #access -->
 		
-		<section id="content" role="main">
+		<section id="content" role="main" class="clearfix">
