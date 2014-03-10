@@ -671,7 +671,10 @@ function my_taxonomies_project() {
 	);
 	$args = array(
 		'labels'            => $labels,
-		'hierarchical'      => true
+		'hierarchical'      => true,
+		'show_in_menu'      => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'projects' ),
 	);
 	register_taxonomy('project_category', 'project', $args);
 }
